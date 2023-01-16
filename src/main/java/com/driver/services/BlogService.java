@@ -43,6 +43,7 @@ public class BlogService {
         Blog blog = new Blog();
         blog.setTitle(title);
         blog.setContent(content);
+        blog.setPubDate(new Date());
 //        adding new blog to user's bloglist
         blogListByUser.add(blog);
 //        updating user's blogList

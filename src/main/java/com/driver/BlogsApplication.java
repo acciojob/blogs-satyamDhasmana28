@@ -9,11 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BlogsApplication {
     public static void main(String[] args) {
 //        Image image = new Image();
-//        image.setDimensions("25X20");
-//        String sd="7X5";
+//        image.setDimensions("4X4");
+//        String sd="9X9";
 //        ImageService imageService = new ImageService();
-//        imageService.countImagesInScreen(image,sd);
-//        System.out.println("hi");
+//        int c=  imageService.countImagesInScreen(image,sd);
+//        System.out.println("image count ="+c);
         SpringApplication.run(BlogsApplication.class, args);
     }
 }

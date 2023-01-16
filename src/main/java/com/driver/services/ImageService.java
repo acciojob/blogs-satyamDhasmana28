@@ -23,8 +23,8 @@ public class ImageService {
         image.setDescription(description);
         imageListInBlog.add(image);
         blog.setImageList(imageListInBlog);
-        image.setBlog(blog);
-        imageRepository2.save(image);
+//        image.setBlog(blog);
+//        imageRepository2.save(image);
 //        blogRepository.save(blog);
         return image;
     }

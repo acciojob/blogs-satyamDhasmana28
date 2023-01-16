@@ -12,8 +12,8 @@ import java.util.List;
 public class ImageService {
     @Autowired
     ImageRepository imageRepository2;
-    @Autowired
-    BlogRepository blogRepository;
+//    @Autowired
+//    BlogRepository blogRepository;
 
     public Image createAndReturn(Blog blog, String description, String dimensions){
         //create an image based on given parameters and add it to the imageList of given blog
@@ -24,7 +24,8 @@ public class ImageService {
         imageListInBlog.add(image);
         blog.setImageList(imageListInBlog);
         image.setBlog(blog);
-        blogRepository.save(blog);
+        imageRepository2.save(image);
+//        blogRepository.save(blog);
         return image;
     }
 

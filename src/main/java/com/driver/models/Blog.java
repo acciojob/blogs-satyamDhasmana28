@@ -21,7 +21,7 @@ public class Blog {
     private User user;
 
 //    connecting to image
-    @OneToMany
+    @OneToMany(mappedBy = "blog",cascade = CascadeType.ALL)
     private List<Image> imageList;
 //    getter,setter
 
